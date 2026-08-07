@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+  a0509_stand.urdf
+  A0509 mounting stand, converted from A0509_Stand.step.
+  - visual/collision: meshes/a0509_stand.stl (metres, XY-centred, floor z=0)
+  - bounding-box size: 0.6 x 0.9 x 0.81 m
+  - mounting surface: z=0.81 m
+  - volume: 0.0371974553 m^3
+  - mass/inertia: uniform stainless steel at 7850 kg/m^3
+-->
+<robot name="a0509_stand">
+
+  <material name="a0509_stand_gray">
+    <color rgba="0.35 0.38 0.42 1.0"/>
+  </material>
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0.404972636" rpy="0 0 0"/>
+      <mass value="292.000024"/>
+      <inertia
+          ixx="64.6071365" ixy="0" ixz="0"
+          iyy="51.0564665" iyz="0" izz="34.7291171"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/a0509_stand.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="a0509_stand_gray"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/a0509_stand.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
