@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!--
   prepare_table.urdf
-  Prepare table, converted from prepare_table.step.
+  Prepare table V2, converted from prepare_table_v2.step.
   - visual/collision: meshes/prepare_table.stl (metres, XY-centred, floor z=0)
   - bounding-box size: 1.2 x 1.2 x 0.85 m
-  - volume: 0.0336108543 m^3
+  - volume: 0.0288193971 m^3
   - mass/inertia: uniform stainless steel at 7850 kg/m^3
 -->
 <robot name="prepare_table">
@@ -15,11 +15,11 @@
 
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.195888388 -0.195888388 0.69792508" rpy="0 0 0"/>
-      <mass value="263.845207"/>
+      <origin xyz="-0.200255281 -0.200255281 0.676644628" rpy="0 0 0"/>
+      <mass value="226.232268"/>
       <inertia
-          ixx="57.2730186" ixy="21.8027201" ixz="2.12835319"
-          iyy="57.2730186" iyz="2.12835319" izz="87.1094377"/>
+          ixx="52.2125676" ixy="19.0986592" ixz="2.27857111"
+          iyy="52.2125676" iyz="2.27857111" izz="78.4342135"/>
     </inertial>
 
     <visual>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!--
   complete_table.urdf
-  Complete table, converted from Complete table.step.
+  Complete table V2, converted from complete_table_v2.step.
   - visual/collision: meshes/complete_table.stl (metres, XY-centred, floor z=0)
   - bounding-box size: 1 x 0.35 x 0.85 m
-  - volume: 0.0235762261 m^3
+  - volume: 0.0211619404 m^3
   - mass/inertia: uniform stainless steel at 7850 kg/m^3
 -->
 <robot name="complete_table">
@@ -15,11 +15,11 @@
 
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.0037752429 0 0.703381075" rpy="0 0 0"/>
-      <mass value="185.073375"/>
+      <origin xyz="-0.0128140967 0.0137472873 0.693653881" rpy="0 0 0"/>
+      <mass value="166.121232"/>
       <inertia
-          ixx="12.0795953" ixy="0" ixz="0.0942076384"
-          iyy="31.5091358" iyz="0" izz="25.0569296"/>
+          ixx="11.5401152" ixy="-0.113911095" ixz="0.2902391"
+          iyy="30.0569243" iyz="-0.199531054" izz="23.4088639"/>
     </inertial>
 
     <visual>
