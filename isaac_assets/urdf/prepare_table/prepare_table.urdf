@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+  prepare_table.urdf
+  Prepare table, converted from prepare_table.step.
+  - visual/collision: meshes/prepare_table.stl (metres, XY-centred, floor z=0)
+  - bounding-box size: 1.2 x 1.2 x 0.85 m
+  - volume: 0.0336108543 m^3
+  - mass/inertia: uniform stainless steel at 7850 kg/m^3
+-->
+<robot name="prepare_table">
+
+  <material name="prepare_table_stainless">
+    <color rgba="0.62 0.64 0.66 1.0"/>
+  </material>
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.195888388 -0.195888388 0.69792508" rpy="0 0 0"/>
+      <mass value="263.845207"/>
+      <inertia
+          ixx="57.2730186" ixy="21.8027201" ixz="2.12835319"
+          iyy="57.2730186" iyz="2.12835319" izz="87.1094377"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/prepare_table.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="prepare_table_stainless"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/prepare_table.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

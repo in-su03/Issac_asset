@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+  stirfry_bowl.urdf
+  Stir-fry bowl, converted from stirfry_bowl.step.
+  - visual/collision: meshes/stirfry_bowl.stl (metres, XY-centred, floor z=0)
+  - bounding-box size: 0.2500002 x 0.2500002 x 0.0800002 m
+  - volume: 0.000493315489 m^3
+  - mass/inertia: uniform stainless steel at 7850 kg/m^3
+-->
+<robot name="stirfry_bowl">
+
+  <material name="stirfry_bowl_stainless">
+    <color rgba="0.75 0.77 0.79 1.0"/>
+  </material>
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="4.61691616e-07 -5.39599853e-08 0.0377756566" rpy="0 0 0"/>
+      <mass value="3.87252659"/>
+      <inertia
+          ixx="0.0140621191" ixy="-1.63455759e-08" ixz="-6.60210132e-08"
+          iyy="0.0140621854" iyz="6.99554482e-09" izz="0.0248360971"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/stirfry_bowl.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="stirfry_bowl_stainless"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/stirfry_bowl.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
