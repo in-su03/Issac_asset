@@ -44,6 +44,7 @@ export ISAAC_ASSETS=/절대경로/Issac_asset/isaac_assets
 | `robot_stand` | 로봇 스탠드/선반 60×60×80cm, Ø30 기둥 4개(개방 프레임) |
 | `a0509_on_stand` | 두산 A0509 + 선반을 fixed joint로 결합한 통합 에셋 |
 | `air_compressor` | 에어 컴프레셔 (STEP/STL→URDF 변환, 단일 바디) |
+| `bonitkit` | Bonitkit 테스트 설비 (STEP→STL/URDF 변환, 단일 바디) |
 
 ### 🏭 창고 설비 / 구조물
 | 에셋 | 설명 |
